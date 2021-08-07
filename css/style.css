@@ -716,9 +716,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 50px;
   width: 100%;
   margin: 0 auto;
@@ -739,7 +736,7 @@ a {
 }
 
 .contact__container .contact__right {
-  width: 60%;
+  width: 50%;
 }
 
 .contact__container .contact__right .contact__form-main input {
@@ -750,7 +747,7 @@ a {
   outline: none;
   padding: 14px;
   border: 2px solid #ffffff;
-  color: #ffffff;
+  color: black;
   font-size: 1rem;
   margin-top: 10px;
 }
@@ -768,7 +765,7 @@ a {
   outline: none;
   padding: 14px;
   border: 2px solid #ffffff;
-  color: #ffffff;
+  color: black;
   font-size: 1rem;
   margin-top: 10px;
 }
@@ -799,6 +796,7 @@ a {
   }
   .contact__container .contact__left {
     width: 100%;
+    margin-bottom: 2rem;
   }
   .contact__container .contact__right {
     width: 100%;
@@ -825,7 +823,7 @@ a {
 }
 
 .footer {
-  padding: 2rem 4rem;
+  padding: 3rem 4rem;
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
@@ -838,6 +836,22 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer .footer__main .copyright {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 500) {
+  .footer .footer__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer__main > * {
+    width: 100%;
+  }
 }
 
 .scrollToTop {
