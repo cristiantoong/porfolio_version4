@@ -1,0 +1,40 @@
+.footer {
+  padding: 2rem 4rem;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+
+  .footer__main{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+}
+
+@media screen and (max-width: 1160px) {
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+.scrollToTop {
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    display: none;
+    z-index: 103;
+    border-radius: 5px;
+  }
+  
+  .scrollToTop:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+//MEDIA QUERY

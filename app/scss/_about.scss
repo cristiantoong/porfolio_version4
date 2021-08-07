@@ -1,0 +1,157 @@
+.about {
+  min-height: 80vh;
+  margin-bottom: 5rem;
+
+
+  &__container {
+      padding: 0 50px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 4rem;
+      max-width: 1600px;
+
+  }
+
+    h1 {
+        margin-bottom: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }  
+
+    h1::before {
+        content: "";
+        background: #fff;
+        width: 38px;
+        height: 4px;
+        display: block;
+    }
+
+    .about__main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-img {
+            width: 450px;
+            height: 450px;
+            filter: grayscale(100%);
+            transition: all 0.3s ease-in-out;
+      
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+        &-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        &-info {
+            width: 50%;
+      
+            .accordion {
+                width: 100%;
+                height: 50px;
+                text-align: left;
+                background: $black;
+                color: $white;
+                outline: none;
+                border: none;
+                font-size: 1.3rem;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            .accordion-content {
+                /* initially removes the padding of content  */
+                margin: 20px 0;
+      
+                border-bottom: 2px solid $white;
+                margin-bottom: 2rem;
+                  /* initially removes the height of content  */
+                max-height: 0;
+                overflow: hidden;
+      
+                /* Animation when opening accordion */
+                transition: max-height 0.2s ease-in-out;
+      
+                p:last-child{
+                    margin-bottom: 30px;
+                }
+      
+                p {
+                    line-height: 1.6;
+                    font-weight: 300;
+                }
+            }   
+        }
+      
+        .resume-link {
+            font-weight: 700;
+        }
+    }
+
+
+
+ 
+}
+
+
+@media screen and (max-width: 1160px) {
+  .about {
+      min-height: 80vh;
+  
+  
+      &__container {
+          flex-direction: column;
+
+          .about__main{
+            &-img {
+                width: 300px;
+                height: 300px;
+                margin-bottom: 80px;
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+          }
+      }
+
+
+  
+      
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+      min-height: 80vh;
+  
+  
+      &__container {
+          
+          width: 100%;
+          .about__main{
+            flex-direction: column;
+            &-img {
+                width: 100%;
+                height: 400px;
+                margin-bottom: 80px;
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+      
+            &-info {
+                width: 100%;
+            }
+          }
+      }
+
+
+      
+
+  
+      
+  }
+}

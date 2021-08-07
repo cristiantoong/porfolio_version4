@@ -1,0 +1,129 @@
+.contact {
+
+  &__container {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 0 50px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+    max-width: 1600px;
+
+    .contact__left > * {
+      margin-bottom: 2rem;
+    }
+
+    .contact__left{
+      width: 35%;
+
+      a{
+        color: #3E512E;
+      }
+    }
+
+    .contact__right{
+      width: 60%;
+      .contact__form {
+        // display: grid;
+        // place-items: center;
+        // padding-bottom: 40px;
+
+        &-main {
+          // display: flex;
+          // flex-direction: column;
+        }
+
+        &-main input {
+          width: 100%;
+          display: block;
+          margin-bottom: 40px; 
+          border: none;
+          outline: none;
+          padding: 14px;
+          border: 2px solid $white;
+          color: $white;
+          font-size: 1rem;
+          margin-top: 10px;
+        }
+        &-main label {
+          width: 100%;
+        }
+        &-main textarea {
+          width: 100%;
+          resize: none;
+          display: block;
+          margin-bottom: 30px; 
+          border: none;
+          outline: none;
+          padding: 14px;
+          border: 2px solid $white;
+          color: $white;
+          font-size: 1rem;
+          margin-top: 10px;
+        }
+        button {
+          width: 100%;
+          display: block; 
+          border: none;
+          outline: none;
+          padding: 16px;
+          background: #3E512E;
+          color: $white;
+          font-size: $font-med;
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+      }
+    }
+
+  }
+  
+}
+
+@media screen and (max-width: 1160px) {
+  .contact {
+      min-height: 80vh;
+  
+  
+      &__container {
+        flex-direction: column;
+        width: 100%;
+        .contact__left{
+          width: 100%;
+        }
+
+        .contact__right {
+          width: 100%;
+        }
+    }
+  
+      
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+      min-height: 80vh;
+  
+  
+      &__container {
+          flex-direction: column;
+          width: 100%;
+          .contact__left{
+            width: 100%;
+          }
+
+          .contact__right {
+            width: 100%;
+          }
+      }
+      
+
+  
+      
+  }
+}
