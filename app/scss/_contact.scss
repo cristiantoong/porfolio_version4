@@ -1,9 +1,10 @@
 .contact {
 
+
+
   &__container {
     padding: 0 50px;
-    display: flex;
-    justify-content: space-between;
+
     
   
     padding: 0 50px;
@@ -12,72 +13,95 @@
     padding: 0 4rem;
     max-width: 1600px;
 
-    .contact__left > * {
+    .contact__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .contact__left > * {
+        margin-bottom: 2rem;
+        font-weight: 300;
+      }
+  
+      .contact__left{
+        width: 40%;
+  
+        a{
+          color: #3E512E;
+        }
+      }
+
+      .contact__right{
+        width: 40%;
+        .contact__form {
+  
+          &-main input {
+            width: 100%;
+            display: block;
+            margin-bottom: 40px; 
+            border: none;
+            outline: none;
+            padding: 14px;
+            border: 1px solid $white;
+            color: $white;
+            font-size: 1rem;
+            margin-top: 10px;
+            background-color: $black;
+          }
+          &-main label {
+            width: 100%;
+            font-weight: 300;
+          }
+          &-main textarea {
+            width: 100%;
+            resize: none;
+            display: block;
+            margin-bottom: 30px; 
+            border: none;
+            outline: none;
+            padding: 14px;
+            border: 1px solid $white;
+            color: $white;
+            font-size: 1rem;
+            margin-top: 10px;
+            background-color: $black;
+          }
+          button {
+            width: 100%;
+            display: block; 
+            border: none;
+            outline: none;
+            padding: 16px;
+            background: #3E512E;
+            border: 1px solid $white;
+            color: $white;
+            font-size: $font-med;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: $black;
+            font-weight: 300;
+          }
+  
+        }
+      }
+      
+    }
+
+    
+
+    
+
+    h1 {
       margin-bottom: 2rem;
-    }
-
-    .contact__left{
-      width: 35%;
-
-      a{
-        color: #3E512E;
-      }
-    }
-
-    .contact__right{
-      width: 50%;
-      .contact__form {
-        // display: grid;
-        // place-items: center;
-        // padding-bottom: 40px;
-
-        &-main {
-          // display: flex;
-          // flex-direction: column;
-        }
-
-        &-main input {
-          width: 100%;
-          display: block;
-          margin-bottom: 40px; 
-          border: none;
-          outline: none;
-          padding: 14px;
-          border: 2px solid $white;
-          color: black;
-          font-size: 1rem;
-          margin-top: 10px;
-        }
-        &-main label {
-          width: 100%;
-        }
-        &-main textarea {
-          width: 100%;
-          resize: none;
-          display: block;
-          margin-bottom: 30px; 
-          border: none;
-          outline: none;
-          padding: 14px;
-          border: 2px solid $white;
-          color: black;
-          font-size: 1rem;
-          margin-top: 10px;
-        }
-        button {
-          width: 100%;
-          display: block; 
-          border: none;
-          outline: none;
-          padding: 16px;
-          background: #3E512E;
-          color: $white;
-          font-size: $font-med;
-          font-weight: 600;
-          cursor: pointer;
-        }
-
-      }
+      font-weight: 400;
+      text-transform: uppercase;
+    }  
+  
+    h1::before {
+        content: "";
+        background: #fff;
+        width: 38px;
+        height: 4px;
+        display: block;
     }
 
   }
@@ -86,19 +110,20 @@
 
 @media screen and (max-width: 1160px) {
   .contact {
-      min-height: 80vh;
-  
   
       &__container {
-        flex-direction: column;
-        width: 100%;
-        .contact__left{
-          width: 100%;
-          margin-bottom: 2rem;
-        }
 
-        .contact__right {
+        .contact__main {
+          flex-direction: column;
           width: 100%;
+          .contact__left{
+            width: 100%;
+            margin-bottom: 2rem;
+          }
+  
+          .contact__right {
+            width: 100%;
+          }
         }
     }
   
@@ -112,8 +137,11 @@
   
   
       &__container {
+
+        .contact__main {
           flex-direction: column;
           width: 100%;
+
           .contact__left{
             width: 100%;
           }
@@ -121,10 +149,11 @@
           .contact__right {
             width: 100%;
           }
-      }
-      
 
-  
-      
+        }
+
+
+      }
+    
   }
 }

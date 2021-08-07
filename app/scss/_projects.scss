@@ -109,6 +109,17 @@
 
 
 
+@media screen and (max-width: 1160px) {
+}
+
+@media screen and (max-width: 768px) {
+  .code-btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+}
+
+
 // .info {
 //   width: 50%;
 //   h2 {

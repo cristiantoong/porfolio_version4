@@ -31,7 +31,9 @@
                     <a class="navbar__links" href="#about" id="about-page">About</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__links button" href="#contact" id="contact-page">Contact</a>
+                    <a class="navbar__links button" href="#contact" id="contact-page">
+                        <span class="contact__btn">Contact</span>
+                    </a>
                 </li>
             </ul>
 
@@ -120,8 +122,8 @@
                                     <h4>Skillset:</h4>
                                     <p>HTML, CSS, Javascript, Django/Python</p>
                                 </div>
-                                <a class="projects__card-1-info--btn" href="https://github.com/cristiantoong/beautifulescaperesort" target="_blank">Code</a>
-                                <a class="projects__card-1-info--btn" href="https://cristiantoong.github.io/beautifulescaperesort/" target="_blank">Demo</a>
+                                <a class="projects__card-1-info--btn code-btn" href="https://github.com/cristiantoong/myrecipeblogdjango" target="_blank">Code</a>
+                                <a class="projects__card-1-info--btn" href="http://cristiantoong01.pythonanywhere.com/" target="_blank">Demo</a>
                             </div>
                         </div>
                     </div>
@@ -140,7 +142,7 @@
                                     <h4>Skillset:</h4>
                                     <p>HTML, CSS, Javascript, Bootstrap, Figma, Moodboard/Stylescapes</p>
                                 </div>
-                                <a class="projects__card-1-info--btn" href="https://github.com/cristiantoong/beautifulescaperesort" target="_blank">Code</a>
+                                <a class="projects__card-1-info--btn code-btn" href="https://github.com/cristiantoong/beautifulescaperesort" target="_blank">Code</a>
                                 <a class="projects__card-1-info--btn" href="https://cristiantoong.github.io/beautifulescaperesort/" target="_blank">Demo</a>
                             </div>
                         </div>
@@ -160,8 +162,8 @@
                                     <h4>Skillset:</h4>
                                     <p>HTML, CSS, Javascript, Slick JS, Adobe XD</p>
                                 </div>
-                                <a class="projects__card-1-info--btn" href="https://github.com/cristiantoong/beautifulescaperesort" target="_blank">Code</a>
-                                <a class="projects__card-1-info--btn" href="https://cristiantoong.github.io/beautifulescaperesort/" target="_blank">Demo</a>
+                                <a class="projects__card-1-info--btn code-btn" href="https://github.com/cristiantoong/feelthewavessurf" target="_blank">Code</a>
+                                <a class="projects__card-1-info--btn" href="https://cristiantoong.github.io/feelthewavessurf/" target="_blank">Demo</a>
                             </div>
                         </div>
                     </div>
@@ -180,8 +182,8 @@
                                     <h4>Skillset:</h4>
                                     <p>HTML, CSS, Putsmail</p>
                                 </div>
-                                <a class="projects__card-1-info--btn" href="https://github.com/cristiantoong/beautifulescaperesort" target="_blank">Code</a>
-                                <a class="projects__card-1-info--btn" href="https://cristiantoong.github.io/beautifulescaperesort/" target="_blank">Demo</a>
+                                <a class="projects__card-1-info--btn code-btn" href="https://github.com/cristiantoong/html-email" target="_blank">Code</a>
+                                <a class="projects__card-1-info--btn" href="https://cristiantoong.github.io/html-email/" target="_blank">Demo</a>
                             </div>
                         </div>
                     </div>
@@ -200,8 +202,7 @@
                                     <h4>Skillset:</h4>
                                     <p>Webflow, Figma</p>
                                 </div>
-                                <a class="projects__card-1-info--btn" href="https://github.com/cristiantoong/beautifulescaperesort" target="_blank">Code</a>
-                                <a class="projects__card-1-info--btn" href="https://cristiantoong.github.io/beautifulescaperesort/" target="_blank">Demo</a>
+                                <a class="projects__card-1-info--btn" href="https://chatisfy.webflow.io/" target="_blank">Demo</a>
                             </div>
                         </div>
                     </div>
@@ -253,33 +254,38 @@
     <!-- End About -->
 
     <section class="contact" id="contact">
+        
         <div class="contact__container">
-            <div class="contact__left">
-                <h1>Contact Me</h1>
-                <p>Right Now I am actively seeking for a position as a Web Designer/Front End Developer</p>
-                <p>Feel free to reach me out at</p>
-                <a href="mailto:cristiantoong@gmail.com">email: cristiantoong@gmail.com</a>
-            </div>
+            <h1>Contact</h1>
 
-            <div class="contact__right">
-                <div class="contact__form">
-                    <form action="POST" class="contact__form-main" method="POST" data-netlify="true" id="form">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email">
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        <!-- <input type="file" name="myfile" id="myfile"> -->
-                        <!-- <div class="field">
-                            <div data-netlify-recaptcha="true"></div>
-                        </div> -->
-                        <button type="submit">Submit</button>
+            <div class="contact__main">
+                <div class="contact__left">
+                    <p>Right Now I am actively seeking for a position as a Web Designer/Front End Developer</p>
+                    <p>Feel free to reach me out at</p>
+                    <a href="mailto:cristiantoong@gmail.com">email: cristiantoong@gmail.com</a>
+                </div>
     
-                        <div id="error"></div>
-                    </form>
+                <div class="contact__right">
+                    <div class="contact__form">
+                        <form action="POST" class="contact__form-main" method="POST" data-netlify="true" id="form">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email">
+                            <label for="message">Your Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <!-- <input type="file" name="myfile" id="myfile"> -->
+                            <!-- <div class="field">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div> -->
+                            <button type="submit">Submit</button>
+        
+                            <div id="error"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
+
 
         </div>
         

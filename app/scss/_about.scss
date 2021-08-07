@@ -1,6 +1,5 @@
 .about {
-  min-height: 80vh;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 
 
   &__container {
@@ -59,7 +58,7 @@
                 outline: none;
                 border: none;
                 font-size: 1.3rem;
-                font-weight: 600;
+                font-weight: 400;
                 cursor: pointer;
             }
             .accordion-content {
@@ -99,8 +98,8 @@
 
 @media screen and (max-width: 1160px) {
   .about {
-      min-height: 80vh;
-  
+        margin-bottom: 0;
+        min-height: 60vh;
   
       &__container {
           flex-direction: column;
@@ -109,10 +108,6 @@
             &-img {
                 width: 300px;
                 height: 300px;
-                margin-bottom: 80px;
-                &:hover {
-                    filter: grayscale(0);
-                }
             }
           }
       }
