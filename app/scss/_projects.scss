@@ -29,34 +29,31 @@
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-auto-rows: 438px;
     grid-gap: 6rem;
-    
   }
 
   &__card {
     position: relative;
     // height: 490px;
-    
-    
-    
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 2px;
     }
 
     .overlay {
       position: absolute;
-      background: rgba(0,0,0,0.7);
+      background: rgba(0, 0, 0, 0.7);
       width: 100%;
       height: 100%;
       left: 0;
       right: 0;
       opacity: 0;
-      transition: .5s ease;
+      transition: 0.5s ease;
       height: 100%;
       display: flex;
       align-items: center;
-
 
       .inner-overlay {
         display: flex;
@@ -90,11 +87,10 @@
 
           a {
             font-size: 1rem;
-            background: #0D0D0B;
+            background: #0d0d0b;
             padding: 1rem 2rem;
             margin-right: 1rem;
           }
-  
         }
       }
     }
@@ -102,12 +98,9 @@
     &:hover .overlay {
       opacity: 1;
       //transform: translate(0,0);
-  } 
+    }
   }
-
 }
-
-
 
 @media screen and (max-width: 1160px) {
 }
@@ -118,7 +111,6 @@
     margin-bottom: 2rem;
   }
 }
-
 
 // .info {
 //   width: 50%;

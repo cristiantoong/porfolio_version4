@@ -494,6 +494,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 2px;
 }
 
 .projects__card .overlay {
@@ -504,8 +505,8 @@ a {
   left: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: .5s ease;
-  transition: .5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -555,7 +556,7 @@ a {
 
 .projects__card .overlay .inner-overlay .info a {
   font-size: 1rem;
-  background: #0D0D0B;
+  background: #0d0d0b;
   padding: 1rem 2rem;
   margin-right: 1rem;
 }
