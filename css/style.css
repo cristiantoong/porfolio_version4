@@ -565,6 +565,13 @@ a {
   opacity: 1;
 }
 
+@media screen and (max-width: 1215px) {
+  .code-btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .code-btn {
     display: inline-block;
