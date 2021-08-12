@@ -1,7 +1,7 @@
 .hero {
   min-height: 100vh;
   // background: url('../images/hero.jpg') center/cover no-repeat;
-  
+
   display: flex;
   align-items: center;
   width: 100%;
@@ -12,7 +12,7 @@
     content: "";
     position: absolute;
     background: black;
-    opacity: 0.20;
+    opacity: 0.2;
     top: 0;
     right: 0;
     bottom: 0;
@@ -32,30 +32,31 @@
     padding-bottom: 6rem;
     padding-top: 10rem;
 
-
-
-    &-primary-heading{
-        font-size: $font-extralarge;
-        margin-bottom: 20px;
-        font-family: 'Playfair Display', serif;
-        font-weight: normal;
+    &-primary-heading {
+      font-size: $font-extralarge;
+      margin-bottom: 20px;
+      font-family: "Playfair Display", serif;
+      font-weight: normal;
     }
 
     &-secondary-heading {
-        font-size: 2rem; //48px
-        font-weight: 400;
-        margin-bottom: 2rem;
+      font-size: 2rem; //48px
+      font-weight: 400;
+      margin-bottom: 2rem;
     }
 
     &-tertiary-heading {
-        font-weight: 300;
-        line-height: 1.6;
-        margin-bottom: 3rem;
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 3rem;
     }
 
     &-cta-btn--link {
+      font-family: "Playfair Display", serif;
       border: 1px solid #fff;
-      padding: 1rem 5rem;
+      padding: 1rem 4rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
   }
 
@@ -71,109 +72,98 @@
       }
     }
   }
-
 }
 
-
-@media screen and (max-width: 850px)  {
+@media screen and (max-width: 850px) {
   .hero {
     &__main {
       width: 100%;
-  
-      &-primary-heading{
+
+      &-primary-heading {
         font-size: 3.5rem;
       }
-  
+
       &-secondary-heading {
-          font-size: 1.5rem; //48px
+        font-size: 1.5rem; //48px
       }
-  
+
       &-tertiary-heading {
-          font-size: 1rem;
+        font-size: 1rem;
       }
-  
+
       &-cta-btn--link {
         border: 1px solid #fff;
         padding: 1rem 3rem;
       }
     }
   }
-
 }
 
 @media screen and (max-width: 700px) {
   .hero {
-
-  
     &__main {
       position: relative;
       width: 100%;
 
-      &-primary-heading{
-          font-size: 3rem;
-          margin-bottom: 20px;
-          font-family: 'Playfair Display', serif;
-          font-weight: normal;
+      &-primary-heading {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        font-family: "Playfair Display", serif;
+        font-weight: normal;
       }
-  
+
       &-secondary-heading {
-          font-size: 1.5rem; //48px
-          font-weight: 400;
-          margin-bottom: 2rem;
+        font-size: 1.5rem; //48px
+        font-weight: 400;
+        margin-bottom: 2rem;
       }
-  
+
       &-tertiary-heading {
-          font-size: 1rem;
+        font-size: 1rem;
       }
-  
+
       &-cta-btn--link {
         border: 1px solid #fff;
         padding: 1rem 3rem;
       }
     }
-
-  
-  
   }
-} 
-
-
+}
 
 @media screen and (max-width: 580px) {
   .hero {
     min-height: 80vh;
-  
+
     &__container {
       padding: 0 5rem;
     }
-  
+
     &__main {
       position: relative;
       width: 100%;
       padding-bottom: 4rem;
 
-      &-primary-heading{
-          font-size: 2rem;
-          margin-bottom: 20px;
-          font-family: 'Playfair Display', serif;
-          font-weight: normal;
+      &-primary-heading {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        font-family: "Playfair Display", serif;
+        font-weight: normal;
       }
-  
+
       &-secondary-heading {
-          font-size: 1rem; //48px
-          font-weight: 400;
-          margin-bottom: 2rem;
+        font-size: 1rem; //48px
+        font-weight: 400;
+        margin-bottom: 2rem;
       }
-  
+
       &-tertiary-heading {
-          font-size: .8rem;
+        font-size: 0.8rem;
       }
-  
+
       &-cta-btn--link {
         border: 1px solid #fff;
-        padding: .8rem 2rem;
+        padding: 0.8rem 2rem;
         font-size: 1rem;
-
       }
     }
 
@@ -187,22 +177,15 @@
         }
       }
     }
-  
-  
   }
 }
 
 @media screen and (max-width: 400px) {
   .hero {
     min-height: 80vh;
-  
+
     &__main {
       padding-top: 2rem;
-
     }
-
-
-  
-  
   }
 }

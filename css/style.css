@@ -122,8 +122,8 @@ a {
 }
 
 .navbar__logo {
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -196,12 +196,12 @@ a {
   background: #fff;
   width: 100%;
   height: 2px;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .mobile-menu .line:first-child {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .navbar-mobile {
@@ -214,7 +214,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #0D0D0B;
+  background: #0d0d0b;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -253,8 +253,8 @@ a {
 }
 
 .active {
-  background: #0D0D0B;
-  opacity: 0.80;
+  background: #0d0d0b;
+  opacity: 0.8;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
@@ -264,8 +264,8 @@ a {
   background: rgba(0, 0, 0, 0.9);
   height: 100%;
   opacity: 1;
-  -webkit-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
   z-index: 99;
 }
 
@@ -294,7 +294,7 @@ a {
   content: "";
   position: absolute;
   background: black;
-  opacity: 0.20;
+  opacity: 0.2;
   top: 0;
   right: 0;
   bottom: 0;
@@ -318,7 +318,7 @@ a {
 .hero__main-primary-heading {
   font-size: 4rem;
   margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-weight: normal;
 }
 
@@ -335,8 +335,11 @@ a {
 }
 
 .hero__main-cta-btn--link {
+  font-family: "Playfair Display", serif;
   border: 1px solid #fff;
-  padding: 1rem 5rem;
+  padding: 1rem 4rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .hero__socials {
@@ -380,7 +383,7 @@ a {
   .hero__main-primary-heading {
     font-size: 3rem;
     margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: normal;
   }
   .hero__main-secondary-heading {
@@ -412,7 +415,7 @@ a {
   .hero__main-primary-heading {
     font-size: 2rem;
     margin-bottom: 20px;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
     font-weight: normal;
   }
   .hero__main-secondary-heading {
@@ -421,11 +424,11 @@ a {
     margin-bottom: 2rem;
   }
   .hero__main-tertiary-heading {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .hero__main-cta-btn--link {
     border: 1px solid #fff;
-    padding: .8rem 2rem;
+    padding: 0.8rem 2rem;
     font-size: 1rem;
   }
   .hero__socials {
@@ -870,8 +873,8 @@ a {
 }
 
 .footer .footer__main .logo {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
