@@ -750,7 +750,11 @@ a {
 }
 
 .contact__container .contact__main .contact__left a {
-  color: #3E512E;
+  color: #3e512e;
+}
+
+.contact__container .contact__main .contact__left .email-address {
+  font-weight: 400;
 }
 
 .contact__container .contact__main .contact__right {
@@ -797,7 +801,7 @@ a {
   border: none;
   outline: none;
   padding: 16px;
-  background: #3E512E;
+  background: #3e512e;
   border: 1px solid #ffffff;
   color: #ffffff;
   font-size: 1.2rem;
